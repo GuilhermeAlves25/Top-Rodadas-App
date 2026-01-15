@@ -2,7 +2,7 @@
 
 ![Top Rodadas FC](flutter_app/assets/images/icon.png)
 
-## 📋 Índice
+##  Índice
 - [Visão Geral](#visão-geral)
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
 - [Backend - API REST Java](#backend---api-rest-java)
@@ -13,7 +13,7 @@
 
 ---
 
-## 🎯 Visão Geral
+##  Visão Geral
 
 **Top Rodadas FC** é um aplicativo mobile de fantasy football que permite aos usuários acompanhar estatísticas, rankings e comparações de jogadores através de uma interface moderna e intuitiva.
 
@@ -28,7 +28,7 @@
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+##  Arquitetura do Sistema
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -72,7 +72,7 @@
 
 ---
 
-## 🔧 Backend - API REST Java
+##  Backend - API REST Java
 
 ### Estrutura de Diretórios
 ```
@@ -103,7 +103,7 @@ src/main/
 
 ### Endpoints Disponíveis
 
-#### 📊 Jogadores
+####  Jogadores
 ```http
 GET /api/jogadores
 Query params: nome, clube, posicao, limite
@@ -115,7 +115,7 @@ GET /api/jogadores/{id}
 Retorna: Detalhes completos do jogador
 ```
 
-#### 🏆 Rankings
+####  Rankings
 ```http
 GET /api/ranking/rodada
 Query params: rodada, posicao, limite
@@ -128,7 +128,7 @@ Query params: posicao, limite
 Retorna: Ranking geral de todos os jogadores
 ```
 
-#### ⚽ Scouts
+####  Scouts
 ```http
 GET /api/scouts/ataque/top-gols
 Query params: limite (padrão: 20)
@@ -153,20 +153,20 @@ Query params: limite (padrão: 20)
 Retorna: Top defesas difíceis
 ```
 
-#### 🔄 Comparação
+####  Comparação
 ```http
 GET /api/comparacao
 Query params: jogador1Id, jogador2Id
 Retorna: Comparação detalhada entre dois jogadores
 ```
 
-#### 🏅 Clubes
+####  Clubes
 ```http
 GET /api/clubes
 Retorna: Lista de todos os clubes
 ```
 
-#### 📈 Estatísticas
+####  Estatísticas
 ```http
 GET /api/estatisticas/resumo
 Retorna: Resumo estatístico do sistema
@@ -204,7 +204,7 @@ O `DataLoaderService` executa ao iniciar a aplicação:
 
 ---
 
-## 📱 Frontend - Flutter
+##  Frontend - Flutter
 
 ### Estrutura de Diretórios
 ```
@@ -237,40 +237,40 @@ lib/
 
 ### Telas do Aplicativo
 
-#### 1️⃣ Club Selection Screen
+####  Club Selection Screen
 - Primeira tela ao abrir o app
 - Seleção de clube favorito (dropdown)
 - Persistência usando SharedPreferences
 
-#### 2️⃣ Dashboard Screen
+####  Dashboard Screen
 - Top 5 jogadores da rodada
 - Filtros por rodada e posição
 - Cards de atalho (Artilharia, Assistências, Defesa, Goleiros)
 - BottomNavigationBar (Início, Jogadores, Rankings)
 
-#### 3️⃣ Player List Screen
+####  Player List Screen
 - Busca por nome (debounce 500ms)
 - Filtros por clube e posição
 - Lista infinita de jogadores
 - Navegação para detalhes
 
-#### 4️⃣ Player Detail Screen
+####  Player Detail Screen
 - Informações completas do jogador
 - Gráfico de pontuação por rodada (fl_chart)
 - Histórico de rodadas
 - Scouts detalhados
 
-#### 5️⃣ Ranking Screen
+#### Ranking Screen
 - Tabs: Por Rodada, Artilharia, Assistências
 - Filtros por posição
 - Top jogadores por categoria
 
-#### 6️⃣ Comparison Screen
+####  Comparison Screen
 - Seleção de 2 jogadores
 - Comparação lado a lado
 - Estatísticas detalhadas
 
-#### 7️⃣ Scout Ranking Screen
+####  Scout Ranking Screen
 - Rankings especializados (top 20)
 - Categorias: Gols, Assistências, Desarmes, Defesas
 
@@ -412,7 +412,7 @@ ipconfig
 
 ---
 
-## 🔄 Fluxo de Dados
+##  Fluxo de Dados
 
 ### 1. Inicialização do Sistema
 
@@ -535,7 +535,7 @@ class Jogador {
 
 ---
 
-## 🎨 Design System
+##  Design System
 
 ### Paleta de Cores
 | Cor | Hex | Uso |
@@ -560,7 +560,7 @@ class Jogador {
 
 ---
 
-## 📝 Logs e Debugging
+##  Logs e Debugging
 
 ### Backend - Logs
 ```properties
@@ -580,7 +580,7 @@ _dio.interceptors.add(LogInterceptor(
 
 ---
 
-## 🔐 Segurança e Performance
+##  Segurança e Performance
 
 ### Backend
 - ✅ CORS habilitado para desenvolvimento
@@ -596,7 +596,7 @@ _dio.interceptors.add(LogInterceptor(
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Problema: App não conecta ao backend
 **Solução:**
@@ -619,7 +619,7 @@ _dio.interceptors.add(LogInterceptor(
 
 ---
 
-## 👨‍💻 Autores
+##  Autores
 
 **Backend (Java/Spring Boot):**
 - Desenvolvido como API REST completa
@@ -633,13 +633,13 @@ _dio.interceptors.add(LogInterceptor(
 
 ---
 
-## 📄 Licença
+##  Licença
 
 Este projeto foi desenvolvido para fins acadêmicos como trabalho final da disciplina de **Programação para Dispositivos Móveis**.
 
 ---
 
-## 🎓 Tecnologias Aprendidas
+##  Tecnologias Aprendidas
 
 ### Backend
 - ✅ Spring Boot e ecossistema Spring
@@ -664,6 +664,6 @@ Este projeto foi desenvolvido para fins acadêmicos como trabalho final da disci
 
 ---
 
-**🎉 Projeto Completo - Top Rodadas FC**
+** Projeto Completo - Top Rodadas FC**
 
-*Desenvolvido com ❤️ usando Java, Spring Boot, Flutter e Dart*
+*Desenvolvido usando Java, Spring Boot, Flutter e Dart*
