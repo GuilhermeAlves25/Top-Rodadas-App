@@ -1,0 +1,9 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.sources.organizeImports.staticStarThreshold": 3,
+    "java.sources.organizeImports.starThreshold": 5
+}
